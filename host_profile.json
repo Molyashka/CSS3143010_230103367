@@ -1,0 +1,60 @@
+{
+  "cpu_model": "Apple M3",
+  "physical_cores": 8,
+  "logical_threads": 8,
+  "cache_line_bytes": 64,
+  "cache_line_bytes_hw_reported": 128,
+  "cache_line_note": "handout/verifier model assumes 64 B; this host reports 128 B",
+  "cpu": {
+    "model": "Apple M3",
+    "microarchitecture": "Apple M3 (arm64, Apple Silicon)",
+    "base_frequency_hz": null,
+    "physical_cores": 8,
+    "logical_threads": 8,
+    "l1d_bytes": 131072,
+    "l2_bytes": 16777216,
+    "l3_bytes": null,
+    "cache_line_bytes": 128,
+    "perf_levels": [
+      {
+        "perflevel": 0,
+        "name": "Performance",
+        "physical_cores": 4,
+        "logical_cpus": 4,
+        "l1d_bytes": 131072,
+        "l1i_bytes": 196608,
+        "l2_bytes": 16777216,
+        "cpus_per_l2": 4
+      },
+      {
+        "perflevel": 1,
+        "name": "Efficiency",
+        "physical_cores": 4,
+        "logical_cpus": 4,
+        "l1d_bytes": 65536,
+        "l1i_bytes": 131072,
+        "l2_bytes": 4194304,
+        "cpus_per_l2": 4
+      }
+    ],
+    "memory_bytes": 8589934592,
+    "hw_model": "Mac15,12",
+    "notes": [
+      "Apple Silicon: base frequency (hw.cpufrequency) and L3 are not exposed by sysctl; the System Level Cache (SLC) is shared but its size is not reported.",
+      "L1D/L2 reported for performance cores (perflevel0); L2 is shared per cluster."
+    ],
+    "smt_enabled": false
+  },
+  "os": {
+    "system": "Darwin",
+    "release": "23.6.0",
+    "kernel_version": "Darwin Kernel Version 23.6.0: Fri Jul  5 17:56:39 PDT 2024; root:xnu-10063.141.1~2/RELEASE_ARM64_T8122",
+    "machine": "arm64",
+    "platform": "macOS-14.6-arm64-arm-64bit"
+  },
+  "python": {
+    "implementation": "CPython",
+    "version": "3.10.0rc2",
+    "compiler": "Clang 12.0.5 (clang-1205.0.22.11)"
+  }
+}

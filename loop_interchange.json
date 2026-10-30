@@ -1,0 +1,26 @@
+{
+  "student_id": "30103367",
+  "N": 1472,
+  "M": 736,
+  "seed": 77976,
+  "backend": "numba",
+  "runs": 3,
+  "naive_time_s": 0.4786615829798393,
+  "interchanged_time_s": 0.09379362501204014,
+  "runs_naive_s": [
+    0.46309274999657646,
+    0.502745000005234,
+    0.4786615829798393
+  ],
+  "runs_interchanged_s": [
+    0.1002191660227254,
+    0.09379362501204014,
+    0.093315584002994
+  ],
+  "speedup": 5.103348792824611,
+  "max_abs_diff_ijk_vs_ikj": 0.0,
+  "max_abs_diff_vs_numpy": 1.1368683772161603e-13,
+  "digest_ijk_sha256": "10df50a3982d639aa4f50c09bed1c1502ef205fed0dbed4e116884bc37a86787",
+  "digest_ikj_sha256": "10df50a3982d639aa4f50c09bed1c1502ef205fed0dbed4e116884bc37a86787",
+  "epsilon_ok": true
+}

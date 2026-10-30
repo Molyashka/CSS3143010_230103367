@@ -1,0 +1,42 @@
+{
+  "N": 1472,
+  "iters": 50,
+  "flops_per_point": 4,
+  "dram_bytes_per_point_ideal": 16,
+  "arithmetic_intensity": 0.25,
+  "arithmetic_intensity_flop_per_byte": 0.25,
+  "arithmetic_intensity_with_write_allocate": 0.16666666666666666,
+  "peak_gflops_used": 221.85810730105908,
+  "peak_bandwidth_gbs_used": 89.4077037857471,
+  "peaks_source": "measured (numpy matmul / threaded memcpy)",
+  "ridge_point_flop_per_byte": 2.48142048064125,
+  "regime": "Memory-Bandwidth Bound",
+  "roofline_bound_gflops": 22.351925946436776,
+  "achieved_gflops_at_P8": 1.336158952843828,
+  "working_set_bytes_two_grids": 34668544,
+  "working_set_fits_in": "DRAM / system-level cache",
+  "cache_sizes_bytes": {
+    "L1D": 131072,
+    "L2": 16777216,
+    "L3": null
+  },
+  "amdahl": {
+    "serial_fraction_s": 0.3475470720094465,
+    "S_max": 2.8773080843932974,
+    "P_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "S_values": [
+      1.0,
+      1.9023340672297184,
+      2.512549753199543,
+      1.6385425415775356
+    ]
+  },
+  "notes": [
+    "Numerator counts only the 4 FLOPs/point; the NumPy implementation moves more bytes than the ideal 16 B/point because of temporaries and write-allocate."
+  ]
+}
